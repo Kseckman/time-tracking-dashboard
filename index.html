@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--css-->
+  <link rel="stylesheet" href="styles.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="profile-card">
+        <div class="profile">
+          <img src="images\image-jeremy.png" alt="profile pic" class="profile-image">
+            <div class="profile-text">
+              <p class="text-small text-mute">Report for</p>
+              <p class="profile-name">Jeremy Robson</p>
+            </div>
+        </div>    
+        <div id='TimeSelector' class="select-buttons">
+          <button 
+            data-timeSelector='daily' 
+            id="daily-btn" 
+            class="text-mute btn active">Daily
+          </button>
+          <button 
+            data-timeSelector='weekly' 
+            id="weekly-btn"
+            class="text-mute btn">Weekly
+        </button>
+          <button 
+            data-timeSelector='monthly' 
+            id="monthy-btn" 
+            class="text-mute btn">Monthly
+        </button>
+        </div>
+      </div>
+          
+
+  
+      <div class="card work-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Work</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card play-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Play</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card study-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Study</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card exercise-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Exercise</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card social-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Social</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card selfcare-card">
+        <div class="card-text">
+          <div class="title">
+            <p>Self Care</p>
+            <img src="images\icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <h2 class="hours">0hrs</h2>
+            <p class="last-time">Choose a time period</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      </div>
+
+    </div>
+   
+  </div>
+
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
